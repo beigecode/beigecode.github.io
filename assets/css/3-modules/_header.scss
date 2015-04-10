@@ -9,7 +9,6 @@ header {
    }
 
    nav {
-
     a {
       display: inline-block;
       margin-left: 20px;
@@ -23,13 +22,6 @@ header {
         color: rgb(255, 255, 255);
       }
     }
-
-   }
-
-   span {
-     display:inline-block;
-     padding: 0.5em;
-     border: white dashed 2px;
    }
 
    h1 {
@@ -41,14 +33,67 @@ header {
      color:white;
      text-transform: uppercase;
      letter-spacing: 0.05em;
+     span {
+       display:inline-block;
+       padding: 0.2em 0.5em;
+       border: white solid 6px;
+     }
    }
 
-   p.kicker {
+   .kicker {
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 0.3em;
      font: {
-       size: 20px;
+       size: $glitch-font-size;
        weight: 700;
      }
-     color: rgba(255, 255, 255, 0.8);
+     color: white;
+   }
+   .glitch{
+     @extend h1;
+     position:relative;
+     margin:0 auto;
+   }
+   @include keyframes (noise-anim){
+     $steps:20;
+     @for $i from 0 through $steps{
+       #{percentage($i*(1/$steps))}{
+         clip:rect(random(100)+px,9999px,random(100)+px,0);
+       }
+     }
+   }
+   .glitch:after{
+     content:attr(glitch-text);
+     position:absolute;
+     left:2px;
+     text-shadow:-1px 0 white;
+     top:0;
+     color:white;
+     background:#42C9FF;
+     overflow:hidden;
+     clip:rect(0,900px,0,0);
+     @include animation(noise-anim 3s infinite linear alternate-reverse);
    }
 
+   @include keyframes (noise-anim-2){
+     $steps:20;
+     @for $i from 0 through $steps{
+       #{percentage($i*(1/$steps))}{
+         clip:rect(random(100)+px,9999px,random(100)+px,0);
+       }
+     }
+   }
+   .glitch:before{
+     content:attr(data-text);
+     position:absolute;
+     left:-2px;
+     text-shadow:1px 0 blue;
+     top:0;
+     color:white;
+     background:#42C9FF;
+     overflow:hidden;
+     clip:rect(0,900px,0,0);
+     @include animation(noise-anim-2 4s infinite linear alternate-reverse);
+   }
  }
