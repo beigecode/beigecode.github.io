@@ -1,0 +1,24 @@
+{
+  "name": "gulp-jekyll-livereload",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roana0229/gulp-jekyll-livereload"
+  },
+  "author": "roana0229",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roana0229/gulp-jekyll-livereload/issues"
+  },
+  "homepage": "https://github.com/roana0229/gulp-jekyll-livereload",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-webserver": "^0.8.3",
+    "node-notifier": "^4.0.2"
+  }
+}
