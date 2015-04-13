@@ -103,3 +103,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
+
+/* Make footer sticky -  Taken from: http://galengidman.com/2014/03/25/responsive-flexible-height-sticky-footers-in-css/  */
+html, body { height: 100%; }
+
+body {
+  display: table;
+  width: 100%;
+}

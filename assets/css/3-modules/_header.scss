@@ -4,9 +4,10 @@ header {
  background: #42c9ff;
 
    .logo {
-     @include size(150px);
+     @include size(50px);
      background: #42c9ff;
      float: left;
+     padding: 10px;
    }
 
    nav {
@@ -15,12 +16,8 @@ header {
     a {
       display: inline-block;
       margin-left: 20px;
-      text-transform: uppercase;
       color: rgba(255, 255, 255, 0.7);
-        font: {
-          size:14px;
-          weight: 700;
-        }
+      @extend %small-bold;
       &:hover {
         color: rgb(255, 255, 255);
       }
@@ -48,12 +45,8 @@ header {
 
    .kicker {
      text-align: center;
-     text-transform: uppercase;
      letter-spacing: 0.3em;
-     font: {
-       size: 13px;
-       weight: 700;
-     }
+     @extend %small-bold;
      color: white;
    }
    .glitch{

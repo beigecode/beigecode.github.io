@@ -1,43 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.0" viewBox="0 0 500 500" width="150" height="150" onload="startup()"
+<svg version="1.0" viewBox="0 0 500 500" width="120" height="120"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink">
 
 	<title>laughingman SVG</title>
-
-	<script type="text/ecmascript"><![CDATA[
-		var gTextTransform;
-
-		function startup(){
-			var layerText = document.getElementById("layerText");
-			gTextTransform = layerText.transform.baseVal.getItem(0);
-			rotateText();
-		}
-
-		function rotateText(){
-			gTextTransform.setRotate(gTextTransform.angle - 2.5, 230, 230);
-			setTimeout("rotateText()", 20);
-		}
-	]]></script>
-
-
-	<g id="layerBack">
-		<circle cx="230" cy="230" r="205"
-			fill="#42c9ff" stroke="#FFF" stroke-width="12"/>
-	</g>
-
-
-	<g id="layerText" transform="rotate(0, 230,230)">
-		<defs>
-			<path id="txtPath" d="M395,235 a165 165 1 1 1 0,-10"
-				fill="none" stroke="#000" stroke-width="1"/>
-		</defs>
-		<text fill="#FFF" font-size="31px" font-weight="bold" font-family="Arial">
-    		<textPath xlink:href="#txtPath">
-  				I thought what I'd do was, I'd pretend I was one of those deaf-mutes
-			</textPath>
-		</text>
-	</g>
 
 
 	<g id="layerFace">
