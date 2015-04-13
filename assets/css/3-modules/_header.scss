@@ -6,9 +6,12 @@ header {
    .logo {
      @include size(50px);
      background: #00bef8;
+     float: left;
    }
 
    nav {
+     float:right;
+     margin: 30px 30px 0 0;
     a {
       display: inline-block;
       margin-left: 20px;
@@ -33,10 +36,13 @@ header {
      color:white;
      text-transform: uppercase;
      letter-spacing: 0.05em;
+     margin-bottom: 15px;
+     clear: both; //clearfix
      span {
        display:inline-block;
        padding: 0.2em 0.5em;
        border: white solid 6px;
+       margin-top: 100px;
      }
    }
 
@@ -45,7 +51,7 @@ header {
      text-transform: uppercase;
      letter-spacing: 0.3em;
      font: {
-       size: $glitch-font-size;
+       size: 13px;
        weight: 700;
      }
      color: white;
