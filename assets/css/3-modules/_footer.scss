@@ -1,6 +1,6 @@
 footer {
   background: #42c9ff;
-  display: table-row; // make footer sticky
+  flex: 1; // flexbox to make a sticky footer
   height: 1px;
 
   .lockup {

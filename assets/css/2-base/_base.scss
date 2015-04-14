@@ -104,10 +104,9 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* Make footer sticky -  Taken from: http://galengidman.com/2014/03/25/responsive-flexible-height-sticky-footers-in-css/  */
-html, body { height: 100%; }
-
+// using flexbox to make sticky footer happen
 body {
-  display: table;
-  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
