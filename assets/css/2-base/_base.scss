@@ -106,7 +106,7 @@ body {
 
 // using flexbox to make sticky footer happen
 body {
-  display: flex;
+  @include display(flex);
   min-height: 100vh;
-  flex-direction: column;
+  @include flex-direction(column);
 }

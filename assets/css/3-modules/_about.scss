@@ -1,0 +1,103 @@
+section {
+  @include flex(1); // section flex grow is 1 , allowing sticky footer to have proper height
+}
+
+h3 {
+  @extend %small-bold;
+  color: darken($happy-blue, 20%);
+  text-align: center;
+  padding: 100px 0 30px;
+}
+
+.face-lockup {
+  max-width: 780px;
+  @include display(flex); //flexbox
+  @include align-items(center);
+  @include justify-content(space-around);
+  margin: 0 auto; // center the block
+
+    .face-img {
+      order: 3;
+      @include size(200px);
+      background: url("/assets/img/gis-portrait.jpg");
+      background-position:center;
+      background-size: cover;
+      border-radius: 100px;
+    }
+
+    [class^="icon-"] {
+      width: 100px; // setting height to 100px doesn't work as expected idk
+      background: $happy-blue;
+      border-radius: 50%;
+      padding:2%;
+
+      path, polygon { fill: #fff; }
+
+        &.icon-crosshair { order: 1}
+        &.icon-responsive { order: 2}
+        &.icon-search { order: 4}
+        &.icon-world { order: 5}
+    }
+}
+
+@media screen and (max-width: 675px) {
+
+   .face-lockup {
+     display: block;
+     text-align: center;
+
+       div { display: inline-block; }
+
+       [class^="icon-"] {
+          @include size(70px); // scale down the icons a bit
+          margin: 5px;
+        }
+
+      .face-img {
+        display: block;
+        margin: 0 auto 30px;
+      }
+  }
+
+}
+
+.blurb {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 50px auto;
+  font-size: 24px;
+  text-align: center;
+  font: {
+    weight: 300;
+    style: italic;
+  }
+}
+
+.skill-lockup {
+  max-width: 700px;
+  margin: 100px auto;
+  color: #999;
+    .skill-unit {
+      width:350px;
+      float: left;
+    }
+    .skill-icons {
+      font-size: 0;
+      margin: 0 0 30px;
+      span {
+        display: inline-block;
+        @include size(14px);
+        background-color: rgb(255, 224, 2);
+        margin-right: 5px;
+        border-radius: 50%;
+        &:after {
+          content: "";
+          display: block;
+          @include size(10px);
+          background-color: #fff;
+          border-radius:50%;
+          margin: 2px;
+        }
+      }
+    }
+}

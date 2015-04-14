@@ -1,7 +1,7 @@
 header {
 
  height: 450px;
- background: #42c9ff;
+ background: $happy-blue;
 
    .logo {
      @include size(50px);
@@ -54,7 +54,7 @@ header {
      position:relative;
      margin:0 auto;
    }
-   @include keyframes (noise-anim){
+   @include keyframes (noise-anim) {
      $steps:20;
      @for $i from 0 through $steps{
        #{percentage($i*(1/$steps))}{
@@ -62,7 +62,7 @@ header {
        }
      }
    }
-   .glitch:after{
+   .glitch:after {
      content:attr(glitch-text);
      position:absolute;
      left:2px;
@@ -83,7 +83,7 @@ header {
        }
      }
    }
-   .glitch:before{
+   .glitch:before {
      content:attr(data-text);
      position:absolute;
      left:-2px;
