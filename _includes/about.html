@@ -1,6 +1,6 @@
 <section>
 
-  <h3>About Me</h3>
+  <h2>About Me</h2>
 
   <div class="face-lockup">
 
@@ -20,9 +20,10 @@
 
   <div class="skill-lockup">
 
+  {% for skill in site.data.skills %}
     <div class="skill-unit">
-      <div class="skill-label">Front-end Development</div>
-        <div class="skill-icons">
+      <div class="skill-label">{{ skill.name }}</div>
+        <div class="skill-icons skill-{{ skill.level }}">
           <span></span>
           <span></span>
           <span></span>
@@ -35,86 +36,7 @@
           <span></span>
         </div>
     </div>
-
-    <div class="skill-unit">
-      <div class="skill-label">Front-end Development</div>
-        <div class="skill-icons">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    </div>
-
-    <div class="skill-unit">
-      <div class="skill-label">Front-end Development</div>
-        <div class="skill-icons">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    </div>
-
-    <div class="skill-unit">
-      <div class="skill-label">Front-end Development</div>
-        <div class="skill-icons">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    </div>
-
-    <div class="skill-unit">
-      <div class="skill-label">Front-end Development</div>
-        <div class="skill-icons">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    </div>
-
-    <div class="skill-unit">
-      <div class="skill-label">Front-end Development</div>
-        <div class="skill-icons">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    </div>
+  {% endfor %}
 
   </div>
 
