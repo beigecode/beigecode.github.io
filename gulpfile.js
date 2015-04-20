@@ -57,7 +57,7 @@ gulp.task('serve', function() {
 
 // jekyll build, when a file is changed.
 gulp.task('watch', function () {
-    gulp.watch(['*.html', '*/*.html', '*.md', '*/*.md', 'assets/css/**/*.scss', 'assets/css/*.scss', 'stylesheets/**/*.css', 'assets/**/*.js', '!_site/**', '!_site/*/**'], ['jekyll']);
+    gulp.watch(['*.html', '*/*.html', '*.md', '*/*.md', 'assets/css/**/*.scss', 'assets/css/*.scss', 'stylesheets/**/*.css', 'assets/**/*.js', '_data/*.yml', '!_site/**', '!_site/*/**'], ['jekyll']);
 })
 
 

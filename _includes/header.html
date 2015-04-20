@@ -1,12 +1,16 @@
 <header>
+
   <div class="logo">{% include icons/logo-large.html %}</div>
 
   <nav>
-    <a href="#about-me">About me</a>
-    <a href="">Work</a>
-    <a href="">Clients</a>
-    <a href="">Contact</a>
+
+    {% for item in site.data.settings.menu %}
+      <a href="{{ item.url }}"> {{ item.name }} </a>
+    {% endfor %}
+
   </nav>
-  <h1><span><div class="glitch" glitch-text="Portfolio">Portfolio</div></span></h1>
-  <div class="kicker">Developer // Designer // Translator</div>
+
+  <h1><span><div class="glitch" glitch-text="{{ site.data.settings.title }}">{{ site.data.settings.title }}</div></span></h1>
+  <div class="kicker">{{ site.data.settings.description }}</div>
+
 </header>
