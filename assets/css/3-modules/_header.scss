@@ -1,11 +1,11 @@
 header {
 
  height: 450px;
- background: $happy-blue;
+ background: $bottomless-black;
 
    .logo {
      @include size(50px);
-     background: #42c9ff;
+     background: $bottomless-black;
      float: left;
      padding: 10px;
    }
@@ -69,7 +69,7 @@ header {
      text-shadow:-1px 0 white;
      top:0;
      color:white;
-     background:#42C9FF;
+     background:$bottomless-black;
      overflow:hidden;
      clip:rect(0,900px,0,0);
      @include animation(noise-anim 3s infinite linear alternate-reverse);
@@ -90,7 +90,7 @@ header {
      text-shadow:1px 0 blue;
      top:0;
      color:white;
-     background:#42C9FF;
+     background:$bottomless-black;
      overflow:hidden;
      clip:rect(0,900px,0,0);
      @include animation(noise-anim-2 4s infinite linear alternate-reverse);
