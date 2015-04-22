@@ -27,3 +27,11 @@ skills:
   - {name: Testing, level: '5'}
 
 avatar: 'avatar.jpg'
+
+
+#Work Section
+projects:
+  - {name: LastCloudApp, folder: 'proj-1' }
+  - {name: LastCloudApp, folder: 'proj-2' }
+  - {name: LastCloudApp, folder: 'proj-3' }
+  - {name: LastCloudApp, folder: 'proj-4' }
