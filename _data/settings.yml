@@ -32,6 +32,6 @@ avatar: 'avatar.jpg'
 #Work Section
 projects:
   - {name: LastCloudApp, folder: 'proj-1' }
-  - {name: LastCloudApp, folder: 'proj-2' }
-  - {name: LastCloudApp, folder: 'proj-3' }
+  - {name: Wonderlic assessment module authoring tool, folder: 'proj-2' }
+  - {name: Wonderlic Direct Assessments of Learning Outcomes , folder: 'proj-3' }
   - {name: LastCloudApp, folder: 'proj-4' }

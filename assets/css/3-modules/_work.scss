@@ -9,12 +9,10 @@
   @include clearfix;
 
   .thumbnail-unit {
-    border: 3px solid $happy-yellow;
-    border-radius: 50%;
+  //  border: 3px solid $happy-yellow;
     display: block;
     float: left;
-    width: 20%;
-    margin-right: 4%;
+    width: 25%;
     position: relative;
     padding-top: 20%;
     overflow: hidden;
@@ -25,23 +23,31 @@
       repeat: no-repeat;
       size: cover;
     }
+    @media screen and (max-width: 760px) {
+      width: 50%;
+      padding-top: 26%;
+    }
+
     .thumbnail-overlay {
       height: 100%;
       @include position(absolute, null 100% null 0px);
-      background: fade-out($happy-yellow, 0.4);
+      background: fade-out($happy-yellow, 0.1);
       @include transition;
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(space-around);
+
       text-align: center;
         strong {
           display: block;
-          padding: 30px;
-          color: white;
+          color: $bottomless-black;
           font-weight:300;
-          font-size: 18px;
+          font-size: 24px;
           text-transform:uppercase;
           line-height: 1.2;
-        }
-        [class^="icon-"] {
-          path, polygon { fill: #ffffff; }
+          @media screen and (max-width: 610px) {
+            font-size: 16px;
+          }
         }
     }
 
