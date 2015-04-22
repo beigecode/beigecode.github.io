@@ -2,6 +2,11 @@
   background: $bottomless-black;
 }
 
+.project-heading {
+  @extend .about-heading;
+  color: $happy-yellow;
+}
+
 .thumbnail-container {
   max-width: 960px;
   margin: 0px auto;
@@ -22,6 +27,7 @@
       position: center center;
       repeat: no-repeat;
       size: cover;
+      @include perspective(300);
     }
     @media screen and (max-width: 760px) {
       width: 50%;
@@ -30,12 +36,15 @@
 
     .thumbnail-overlay {
       height: 100%;
-      @include position(absolute, null 100% null 0px);
+      @include position(absolute, 0% 0px null 0px);
       background: fade-out($happy-yellow, 0.1);
-      @include transition;
+      @include transition(1200ms);
       @include display(flex);
       @include align-items(center);
       @include justify-content(space-around);
+      @include transform(rotateX(90deg));
+      @include transform-origin(center bottom);
+      opacity: 0;
 
       text-align: center;
         strong {
@@ -52,7 +61,9 @@
     }
 
     &:hover .thumbnail-overlay {
-      @include position(absolute, 0% 0px null 0px)
+      top: 0%;
+      @include transform(rotateX(0deg));
+      opacity: 1;
     }
   }
 }
