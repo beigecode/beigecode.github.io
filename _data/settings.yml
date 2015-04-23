@@ -6,7 +6,7 @@ email: anton.kann@gmail.com
 #Menu item list
 menu:
   - {name: About Me, url: '#about-me'}
-  - {name: Work, url: '#work'}
+  - {name: Projects, url: '#projects'}
   - {name: Clients, url: '#clients'}
   - {name: Contact, url: '#contact'}
 

@@ -1,0 +1,33 @@
+<section class="alt-section section-projects">
+
+  <h2 class="projects-heading" id="projects">Projects</h3>
+
+  <div class="projects-slider">
+
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+        {% for project in site.data.settings.projects  %}
+        <a class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.folder}}/thumb.jpg)">
+          <div class="thumb-overlay">
+            <strong>{{project.name}}</strong>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="projects-wrap">
+      <div class="projects-container">
+        <div class="icon-return">{% include icons/icon-back.html %}</div>
+        <h4>Do Projects</h4>
+        <div style="width:600px;height:500px;background:#fff;"></div>
+        <p>g pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-b</p>
+        <div style="width:600px;height:500px;background:#fff;"></div>
+        <p>g pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-b</p>
+        <div style="width:600px;height:500px;background:#fff;"></div>
+        <p>g pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-b</p>
+      </div>
+    </div>
+  </div>
+
+</section>
