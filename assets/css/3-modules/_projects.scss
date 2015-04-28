@@ -1,3 +1,8 @@
+.proj-description {
+  color: #fff;
+  font-size: 16px;
+}
+
 .alt-section {
   background: $bottomless-black;
 }
@@ -6,7 +11,7 @@
   width:200%;
   position: relative;
   left: 0%;
-  @include transition;
+  @include transition(all 800ms);
 }
 
 .thumb-wrap, .projects-wrap {
@@ -88,6 +93,7 @@
   max-width: 600px;
   margin: 0px auto;
   margin-top: -80px;
+  display: none;
   h4 {
     color:$happy-yellow;
     font-weight:300;
