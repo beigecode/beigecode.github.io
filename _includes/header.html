@@ -1,16 +1,16 @@
 <header>
+        
+    <div class="logo">{% include icons/logo-large.html %}</div>
 
-  <div class="logo">{% include icons/logo-large.html %}</div>
+    <nav>
 
-  <nav>
+      {% for item in site.data.settings.menu %}
+        <a href="{{ item.url }}"> {{ item.name }} </a>
+      {% endfor %}
 
-    {% for item in site.data.settings.menu %}
-      <a href="{{ item.url }}"> {{ item.name }} </a>
-    {% endfor %}
+    </nav>
 
-  </nav>
-
-  <h1><span><div class="glitch" glitch-text="{{ site.data.settings.title }}">{{ site.data.settings.title }}</div></span></h1>
-  <div class="kicker">{{ site.data.settings.description }}</div>
+    <h1><span><div class="glitch" glitch-text="{{ site.data.settings.title }}">{{ site.data.settings.title }}</div></span></h1>
+    <div class="kicker">{{ site.data.settings.description }}</div>
 
 </header>

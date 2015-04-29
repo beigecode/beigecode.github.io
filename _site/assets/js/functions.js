@@ -4,7 +4,15 @@ $(document).ready(function() {
   smoothScroll(1000);
   slider();
   loadProjects();
+  
+  // Init Skrollr
+var s = skrollr.init();
+ 
+// Refresh Skrollr after resizing our sections
+s.refresh($('.slide'));
 });
+
+
 
   function smoothScroll (duration) {
     $('a[href^="#"]').on('click', function(event) {

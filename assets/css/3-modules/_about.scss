@@ -2,6 +2,11 @@ section {
   @include flex(1); // section flex grow is 1 , allowing sticky footer to have proper height
 }
 
+.bg {
+   background-image: url(/assets/img/bcg_slide-3.jpg);
+   background-size: cover;
+}
+
 .about-heading {
   @extend %medium-bold;
   color: #000;
