@@ -2,6 +2,8 @@
 title: anton_kann
 description: software development // web design // translation services
 email: anton.kann@gmail.com
+logo: #ex: logo.jpg
+hero: #ex: hero.jpg
 
 #Menu item list
 menu:
@@ -27,7 +29,7 @@ skills:
   - {name: Testing, level: '5'}
 
 avatar: 'avatar.jpg'
-
+animation: 'fadeIn'
 
 #Work Section
 projects:

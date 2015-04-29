@@ -1,0 +1,13 @@
+// Initial Conditions
+%animationstart_topDoor {
+  @include size(100%);
+  @include position(absolute, -50% 0px 0px);
+  @include transition(1s);
+  @include transform(rotateX(90deg));
+  @include transform-origin(center top);
+}
+
+%topDoor {
+  top: 0%;
+  @include transform(rotateX(0deg));
+}

@@ -1,0 +1,11 @@
+// Initial Class
+%animationstart_none {
+  @include size(0%);
+  top: 0%;
+  overflow: hidden;
+}
+
+// Animation Class
+%none {
+  @include size(100%);
+}

@@ -1,0 +1,11 @@
+// Initial Class
+%animationstart_fadeIn {
+  @include position(0, 0);
+  @include transition(1200ms);
+  opacity: 0;
+}
+
+// Animation Class
+%fadeIn {
+  opacity: 1;
+}

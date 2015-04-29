@@ -1,8 +1,11 @@
 ---
 # This is the Front Matter block
 ---
-// ABOUT section path config
+// Store Jekyll config variables into Sass variables
 $avatar-path: '{{ site.data.settings.avatar }}';
+$animation: '{{ site.data.settings.animation }}';
+$logo-path: '{{ site.data.settings.logo }}';
+$hero-path: '{{ site.data.settings.hero }}';
 //---------------------------------------------
 
 @import "1-tools/-tools-index";

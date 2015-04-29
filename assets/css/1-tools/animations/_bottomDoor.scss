@@ -1,0 +1,13 @@
+// Initial Conditions
+%animationstart_bottomDoor {
+  @include size(100%);
+  @include position(absolute, 50% 0px 0px);
+  @include transition(800ms);
+  @include transform(rotateX(90deg));
+  @include transform-origin(center bottom);
+}
+
+%bottomDoor {
+  top: 0%;
+  @include transform(rotateX(0deg));
+}

@@ -11,7 +11,7 @@
   width:200%;
   position: relative;
   left: 0%;
-  @include transition(all 800ms);
+  @include transition(all, 800ms);
 }
 
 .thumb-wrap, .projects-wrap {
@@ -42,13 +42,12 @@
     padding-top: 20%;
     overflow: hidden;
     cursor: pointer;
+	@include perspective(300);
     background:{
       color: white;
-      image: url(/assets/img/projects/proj-1/thumb.jpg);
       position: center center;
       repeat: no-repeat;
       size: cover;
-      @include perspective(300);
     }
     @media screen and (max-width: 760px) {
       width: 50%;
@@ -56,18 +55,14 @@
     }
 
     .thumb-overlay {
-      height: 100%;
       @include position(absolute, 0% 0px null 0px);
-      background: fade-out($happy-yellow, 0.1);
-      @include transition(1200ms);
-      @include display(flex);
+	  @include display(flex);
       @include align-items(center);
       @include justify-content(space-around);
-      @include transform(rotateX(90deg));
-      @include transform-origin(center bottom);
-      opacity: 0;
-
+      background: fade-out($happy-yellow, 0.1);
       text-align: center;
+      //animation is specified in the settings config
+      @extend %animationstart_#{$animation}; 
         strong {
           display: block;
           color: $bottomless-black;
@@ -82,8 +77,7 @@
     }
 
     &:hover .thumb-overlay {
-      top: 0%;
-      @include transform(rotateX(0deg));
+      @extend %#{$animation};
       opacity: 1;
     }
   }

@@ -1,0 +1,12 @@
+// Initial Class
+%animationstart_bottomUp {
+  @include size(100%);
+  @include position(absolute, 100% 0px 0px);
+  @include transition;
+}
+
+// Animation Class
+%bottomUp {
+  opacity: 1;
+  top: 0%;
+}

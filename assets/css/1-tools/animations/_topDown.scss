@@ -1,0 +1,10 @@
+// Initial Conditions
+%animationstart_topDown {
+  @include size(100%);
+  @include position(absolute, -100% 0px 0px);
+  @include transition;
+}
+
+%topDown {
+  top: 0%;
+}
