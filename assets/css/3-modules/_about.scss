@@ -2,11 +2,12 @@ section {
   @include flex(1); // section flex grow is 1 , allowing sticky footer to have proper height
 }
 
-.about-heading {
+.section-heading {
   @extend %medium-bold;
   color: #000;
   text-align: center;
   padding: 100px 0 30px;
+  letter-spacing: 10px;
 }
 
 .face-lockup {
@@ -111,7 +112,10 @@ section {
 
   }
 }
-@media screen and (max-width: 715px) { .skill-lockup { width:270px; } }
+@media screen and (max-width: 715px) {
+   .skill-lockup { width:270px; }
+}
+
 %skill-color {
-  background: $happy-yellow;
+  background: #fff;
 }
