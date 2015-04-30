@@ -15,6 +15,7 @@ section {
   @include align-items(center);
   @include justify-content(space-between);
   margin: 0 auto; // center the block
+  text-align: center;
 
   .face-img {
     @include order(3);
@@ -31,12 +32,15 @@ section {
     border-radius: 50%;
     padding:2%;
 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
     path, polygon { fill: #000; }
 
-    &.icon-crosshair { @include order(1) }
-    &.icon-responsive { @include order(2) }
-    &.icon-search { @include order(4) }
-    &.icon-world { @include order(5) }
+    &.icon-webapp { @include order(1); }
+    &.icon-responsive { @include order(2); }
+    &.icon-logo { @include order(4); margin-bottom: 25px;}
+    &.icon-wordpress { @include order(5); margin-bottom: 25px;}
   }
 }
 
@@ -50,7 +54,10 @@ section {
 
     [class^="icon-"] {
       @include size(70px); // scale down the icons a bit
-      margin: 5px;
+      margin: 5px 11%;
+
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .face-img {

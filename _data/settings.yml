@@ -1,6 +1,6 @@
 #Portfolio settings
 title: anton_kann
-description: software development // web design // translation services
+description: front-end development // web design // SEO
 email: anton.kann@gmail.com
 logo: #ex: logo.jpg
 hero: #ex: hero.jpg
@@ -23,10 +23,16 @@ menu:
 blurb: <strong>But I must explain to you how all this mistaken idea of denouncing pleasure</strong> and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
 
 skills:
-  - {name: Front-End Development, level: '8'}
-  - {name: Back-End Development, level: '5'}
-  - {name: UX Design, level: '7'}
-  - {name: Testing, level: '5'}
+  - {name: JavaScript, level: '8'}
+  - {name: HTML/CSS, level: '8'}
+  - {name: UX Design, level: '6'}
+  - {name: SEO & Copywriting, level: '6'}
+
+services:
+  - {name: Web application development, icon: 'webapp'}
+  - {name: Responsive website development, icon: 'responsive'}
+  - {name: Logo design, icon: 'logo'}
+  - {name: Wordpress Development, icon: 'wordpress'}
 
 avatar: 'avatar.jpg'
 animation: 'fadeIn'

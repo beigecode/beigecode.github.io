@@ -5,11 +5,9 @@
   <div class="face-lockup">
 
     <div class="face-img"></div>
-    <div class="icon-crosshair">{% include icons/icon-crosshair.html %}<b>Software Development</b></div>
-    <div class="icon-responsive">{% include icons/icon-responsive.html %}<b>Responsive Design</b></div>
-    <div class="icon-world">{% include icons/icon-world.html %}<b>Russian/English Translation</b></div>
-    <div class="icon-search">{% include icons/icon-search.html %}<b style='margin-left: 35px'>SEO</b></div>
-
+    {% for service in site.data.settings.services %}
+    <div class="icon-{{service.icon}}">{% include icons/icon-{{service.icon}}.html %}<span>{{ service.name }}</span></div>
+    {% endfor %}
   </div>
 
   <div class="blurb">
