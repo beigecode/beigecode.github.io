@@ -43,3 +43,23 @@ projects:
   - {name: Wonderlic assessment module authoring tool, folder: 'proj-2' }
   - {name: Wonderlic Direct Assessments of Learning Outcomes , folder: 'proj-3' }
   - {name: Moltin Store, folder: 'proj-4' }
+
+clients:
+- {photo: 'client-1.jpg',
+  name: 'Motoko Kusanagi',
+  title: 'Director of Operations, HiLife Corp.',
+  quote: '<p><strong>Phasellus vitae mollis nisi.</strong> Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
+  Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.</p>',
+  logo: 'logo-1.svg'}
+- {photo: 'client-2.jpg',
+  name: 'Shang Tsung',
+  title: 'Janitor, MoshiMoshi Corp.',
+  quote: '<p><strong>Phasellus tarea mollis nisi.</strong> Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
+  Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis nopate erat viverra, aliquet dolor quis, pulvinar arcu.</p>',
+  logo: 'logo-2.svg'}
+- {photo: 'client-3.jpg',
+  name: 'Liu Kang',
+  title: 'Marketing Director, Oniichan Corp.',
+  quote: '<p><strong>Phasellus zmadea mollis nisi.</strong> Ut sodaldsases malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
+  Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.</p>',
+  logo: 'logo-3.svg'}

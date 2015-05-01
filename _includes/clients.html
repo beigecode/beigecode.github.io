@@ -9,29 +9,29 @@
 
   <div class="clients-belt">
 
+    {% for client in site.data.settings.clients %}
     <div class="client-unit">
 
       <div class="client-photo">
-        <img src="/assets/img/clients/client-1.jpg" alt="client-photo">
-        <strong class="client-name">Shang Tsung</strong>
-        <em class="client-title">Director of Design, Liu Kang Industries</em>
+        <img src="/assets/img/clients/{{ client.photo }}" alt="client-photo">
+        <strong class="client-name">{{ client.name }}</strong>
+        <em class="client-title">{{ client.tittle }}</em>
       </div>
 
       <div class="client-text">
         <div class="client-quotemark">{% include icons/icon-quotemark.html %}</div>
-        <p><strong>Phasellus vitae mollis nisi.</strong> Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
-        Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.</p>
+        {{ client.quote }}
       </div>
 
     </div>
+    {% endfor %}
 
   </div>
 
   <div class="clients-logos">
-    <div class="client-logo active-client"></div>
-    <div class="client-logo"></div>
-    <div class="client-logo"></div>
-    <div class="client-logo"></div>
+    {% for client in site.data.settings.clients %}
+    <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+    {% endfor %}
   </div>
 
 </section>

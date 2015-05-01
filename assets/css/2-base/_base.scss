@@ -107,6 +107,7 @@ body {
 
 // using flexbox to make sticky footer happen
 body {
+  overflow-x: hidden; //somehow the arrows in the clients section produce a scroll on the x axis
   @include display(flex);
   min-height: 100vh;
   @include flex-direction(column);
