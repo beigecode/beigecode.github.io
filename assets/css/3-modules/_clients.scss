@@ -12,7 +12,8 @@
     max-width: 750px;
     margin: 50px auto;
     z-index: 1;
-    display: none;
+    display: none; // uncomment to make animation work
+    @extend %animationstart_#{$animation};
     &.active-client {
        @include display(flex);//only display the client with class .active
        @extend %#{$animation};
@@ -46,6 +47,7 @@
   }
 }
 
+// Logos
 .clients-logos {
   position: relative;
   max-width: 750px;
@@ -53,22 +55,19 @@
   @include display(flex);
   @include align-items(flex-end);
   @include justify-content(space-around);
-
   .client-logo {
     height: 80px;
     min-width: 200px;
     cursor: pointer;
     margin: 0 20px;
-    padding-bottom: 5px;
-    opacity: 0.5;
     padding-bottom: 20px;
+    opacity: 0.5;
     border-bottom: 4px solid transparent;
     background: {
       size: contain;
       position: center bottom;
       repeat: no-repeat;
     }
-
     &.active-client {
       opacity: 1;
       border-bottom: 4px solid #000;
@@ -83,18 +82,71 @@
   z-index: -1;
 }
 
+// Controls
 .client-controls {
   @include position(absolute, 0px 0px 0px 0px);
   > div {
     @include size(40px);
     margin-top: -20px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
   .client-control-next {
     @include position(absolute, 50% 10px null null);
   }
   .client-control-prev {
     @include position(absolute, 50% null null 10px);
+  }
+}
+
+//Mobile navigation
+.clients-mobile-nav {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: none;
+  span {
+    display: inline-block;
+    @include size(16px);
+    border-radius: 50%;
+    border: solid 2px rgb(184, 184, 184);
+    margin: 0px 10px;
+    cursor: pointer;
+    &.active-client {
+      border-color: $happy-yellow;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .client-controls {
+    display: none;
+  }
+
+  .clients-belt {
+
+    .client-unit.active-client {
+      display: block;
+      position: relative;
+      margin-left: 0px;
+      left: auto;
+    }
+    .client-photo {
+      margin-bottom: 20px;
+    }
+    .client-text {
+      padding: 0px 30px;
+      max-width: 400px;
+      margin: 0px auto;
+    }
+    .client-quotemark {
+      left: 6px;
+    }
+  }
+  .clients-logos {
+    display: none;
+  }
+  .clients-mobile-nav {
+    display: block;
   }
 }
