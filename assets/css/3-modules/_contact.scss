@@ -1,0 +1,21 @@
+.contact-heading {
+  @extend .section-heading;
+  color: #fff;
+}
+
+.social-links {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  @include display(flex);
+  @include justify-content(space-around);
+
+  a {
+    display: block;
+    border-radius:50%;
+    @include size(50px);
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 32px;
+  }
+}

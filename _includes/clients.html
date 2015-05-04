@@ -1,4 +1,4 @@
-<section class="client-section">
+<section class="alt-section client-section">
 
   <h2 class="section-heading" id="clients">Clients</h3>
 
@@ -13,9 +13,8 @@
     </div>
 
   <div class="clients-belt">
-
     {% for client in site.data.settings.clients %}
-    <div class="client-unit">
+    <div class="client-unit {% if forloop.first %}active-client{% endif %}">
 
       <div class="client-photo">
         <img src="/assets/img/clients/{{ client.photo }}" alt="client-photo">
@@ -40,8 +39,12 @@
 
   <div class="clients-logos">
     {% for client in site.data.settings.clients %}
-    <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+      {% if forloop.first %}
+        <img class="client-logo active-client" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+      {% else %}
+        <img class="client-logo" src="assets/img/clients/{{ client.logo }}" align="{{ client.logo }}">
+      {% endif %}
     {% endfor %}
-  </div>
+ </div>
 
 </section>

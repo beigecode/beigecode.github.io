@@ -12,8 +12,8 @@
     max-width: 750px;
     margin: 50px auto;
     z-index: 1;
-    display: none; // uncomment to make animation work
-    @extend %animationstart_#{$animation};
+    display: none;
+
     &.active-client {
        @include display(flex);//only display the client with class .active
        @extend %#{$animation};
@@ -55,6 +55,7 @@
   @include display(flex);
   @include align-items(flex-end);
   @include justify-content(space-around);
+
   .client-logo {
     height: 80px;
     min-width: 200px;
@@ -78,8 +79,8 @@
 .client-quotemark {
   @include position(absolute, -18px -15px);
   @include size(60px);
-  path { fill: rgba(5, 5, 5, 0.28); }
   z-index: -1;
+  path { fill: rgba(5, 5, 5, 0.28); }
 }
 
 // Controls
@@ -124,6 +125,7 @@
   }
 
   .clients-belt {
+    overflow-x: hidden;
 
     .client-unit.active-client {
       display: block;
