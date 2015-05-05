@@ -40,4 +40,5 @@
   font-size: 48px;
   font-weight: 300;
   color: #fff;
+  @media (max-width: 550px) { font-size: 32px; }
 }
