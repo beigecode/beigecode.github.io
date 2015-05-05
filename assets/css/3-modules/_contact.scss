@@ -17,5 +17,20 @@
     line-height: 50px;
     color: #fff;
     font-size: 32px;
+
+    &:hover {
+      @include transform(scale(1.2));
+    }
   }
+}
+
+.bar {
+  height: 0px;
+  width: 50%;
+  border-top: 4px solid #fff;
+  margin: 0 auto 100px;
+}
+
+.email {
+  text-align: center;
 }
