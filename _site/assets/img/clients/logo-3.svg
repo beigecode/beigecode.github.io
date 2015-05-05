@@ -13,7 +13,7 @@
 	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
 	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
 ]>
-<svg 
+<svg
 	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="96.5645 495.0234" i:rulerOrigin="-29.5039 -29.5039" i:pageBounds="29.5039 596.4326 596.4326 29.5039"
 	 xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 width="443.94" height="131.147" viewBox="0 0 443.94 131.147" overflow="visible" enable-background="new 0 0 443.94 131.147"

@@ -3,14 +3,13 @@
   <h2 id="contact" class="contact-heading">Contact</h2>
 
   <div class="social-links">
-    <a href="" class="icon-twitter"></a>
-    <a href="" class="icon-github"></a>
-    <a href="" class="icon-linkedin"></a>
-    <a href="" class="icon-skype"></a>
+    {% for item in site.data.settings.social %}
+    <a href="{{ item.link }}" class="icon-{{ item.icon }}"></a>
+    {% endfor %}
   </div>
 
   <hr class="bar">
 
-  <a href="mailto:anton.kann@gmail.com" class="email">anton.kann@gmail.com</a>
+  <a href="mailto:{{ site.data.settings.email }}" class="email">{{ site.data.settings.email }}</a>
 
 </section>
