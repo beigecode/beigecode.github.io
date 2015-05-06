@@ -1,18 +1,19 @@
 header {
 
- height: 450px;
- background: $bottomless-black;
+ //height: 450px;
+ background: #000;
+ padding-bottom: 100px;
 
    .logo {
      @include size(50px);
-     background: $bottomless-black;
+     background: #000;
      float: left;
      padding: 10px;
    }
 
    nav {
      float:right;
-     margin: 30px 30px 0 0;
+     padding: 30px 30px 0 0;
     a {
       display: inline-block;
       margin-left: 20px;
@@ -69,7 +70,7 @@ header {
      text-shadow:-1px 0 white;
      top:0;
      color:white;
-     background:$bottomless-black;
+     background:#000;
      overflow:hidden;
      clip:rect(0,900px,0,0);
      @include animation(noise-anim 3s infinite linear alternate-reverse);
@@ -90,9 +91,29 @@ header {
      text-shadow:1px 0 blue;
      top:0;
      color:white;
-     background:$bottomless-black;
+     background:#000;
      overflow:hidden;
      clip:rect(0,900px,0,0);
      @include animation(noise-anim-2 4s infinite linear alternate-reverse);
    }
  }
+
+@media (max-width: 640px) {
+  header {
+    .logo {
+      svg {
+        @include size(75px);
+      }
+    }
+    nav {
+      float: none;
+      text-align: center;
+      padding-top: 90px;
+    }
+    h1 {
+      span {
+        margin-top: 20px;
+      }
+    }
+  }
+}
