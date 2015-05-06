@@ -28,8 +28,10 @@ blurb: <strong>But I must explain to you how all this mistaken idea of denouncin
 skills:
   - {name: JavaScript, level: '8'}
   - {name: HTML/CSS, level: '8'}
-  - {name: UX Design, level: '6'}
-  - {name: SEO & Copywriting, level: '6'}
+  - {name: Java, level: '6'}
+  - {name: SQL, level: '6'}
+  - {name: UX Design, level: '7'}
+  - {name: SEO & Copywriting, level: '7'}
 
 services:
   - {name: Web application development, icon: 'webapp'}

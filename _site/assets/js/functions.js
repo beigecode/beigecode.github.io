@@ -5,7 +5,7 @@ $(document).ready(function () {
     slider();
     loadProjects();
     clientSlide();
-    $("header h1 .glitch").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
+    $("header h1 .glitch").fitText(0.8, { minFontSize: '38px', maxFontSize: '72px' });
 });
 
 function smoothScroll(duration) {

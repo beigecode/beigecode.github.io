@@ -1,5 +1,6 @@
 section {
   @include flex(1); // section flex grow is 1 , allowing sticky footer to have proper height
+  padding-bottom: 100px;
 }
 
 .section-heading {
@@ -21,7 +22,6 @@ section {
   .face-img {
     @include order(3);
     @include size(200px);
-    border: 3px solid black;
     background-image: url(../img/#{$avatar-path});
     background-position:center;
     background-size: cover;
@@ -32,9 +32,9 @@ section {
     width: 100px; // setting height to 100px doesn't work as expected idk
     border-radius: 50%;
     padding:2%;
-
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 1.5;
 
     path, polygon { fill: #000; }
 
@@ -81,6 +81,7 @@ section {
   max-width: 700px;
   margin: 100px auto;
   text-transform: uppercase;
+  padding-bottom: 50px;
   .skill-unit {
     width:350px;
     float: left;
