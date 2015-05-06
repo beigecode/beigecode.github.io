@@ -1,0 +1,58 @@
+.section-form {
+  background: #000;
+
+  h2 { color: #fff; }
+
+  form {
+    max-width: 450px;
+    margin: 0 auto 100px;
+
+    textarea { height: 10em;}
+
+    [type="submit"] {
+      background: #000;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 22px;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+
+    input, textarea {
+      border: 3px solid #fff;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+
+      &:focus {
+        outline: none;
+        border-color: $happy-yellow;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  .contact-info-group {
+    label {
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+
+      &:nth-child(1) {
+        padding-right: 5px;
+      }
+      &:nth-child(2) {
+        padding-right: 5px;
+      }
+    }
+  }
+}
