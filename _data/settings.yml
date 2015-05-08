@@ -76,7 +76,7 @@ clients:
 # Contact Section
 # --------------
 social:
-  - {icon: 'twitter', link: 'https://twitter.com/kkkaligula'}
+  - {icon: 'twitter', link: 'https://twitter.com/test'}
   - {icon: 'github', link: 'https://github.com/beigecode'}
   - {icon: 'linkedin', link: 'https://uk.linkedin.com/pub/anton-kann/a1/926/531'}
   - {icon: 'skype', link: 'skype:madpatrick?call'}
