@@ -23,7 +23,7 @@ menu:
 
 # About Section
 # --------------
-blurb: <strong>Phasellus vitae mollis nisi. Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin. Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.
+blurb: <strong>Phasellus vitae mollis nisi. Ut sodales malesuada aliquet.</strong> Vestibulum faucibus sollicitudin turpis a sollicitudin. Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.
 
 skills:
   - {name: JavaScript, level: '8'}
