@@ -23,7 +23,7 @@ menu:
 
 # About Section
 # --------------
-blurb: <strong>But I must explain to you how all this mistaken idea of denouncing pleasure</strong> and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+blurb: <strong>Phasellus vitae mollis nisi. Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin. Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.
 
 skills:
   - {name: JavaScript, level: '8'}
@@ -46,8 +46,8 @@ animation: 'fadeIn'
 # --------------
 projects:
   - {name: LastCloudApp, folder: 'proj-1' }
-  - {name: Wonderlic assessment module authoring tool, folder: 'proj-2' }
-  - {name: Wonderlic Direct Assessments of Learning Outcomes , folder: 'proj-3' }
+  - {name: Assessment Module Authoring app, folder: 'proj-2' }
+  - {name: Assessment Platform app , folder: 'proj-3' }
   - {name: Moltin Store, folder: 'proj-4' }
 
 clients:
@@ -56,19 +56,22 @@ clients:
   title: 'Director of Operations, HiLife Corp.',
   quote: '<p><strong>Phasellus vitae mollis nisi.</strong> Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
   Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.</p>',
-  logo: 'logo-1.svg'}
+  logo: 'logo-1.svg',
+  bwlogo: 'bwlogo-1.svg'}
 - {photo: 'client-2.jpg',
   name: 'Shang Tsung',
   title: 'Janitor, MoshiMoshi Corp.',
   quote: '<p><strong>Phasellus tarea mollis nisi.</strong> Ut sodales malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
   Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis nopate erat viverra, aliquet dolor quis, pulvinar arcu.</p>',
-  logo: 'logo-2.svg'}
+  logo: 'logo-2.svg',
+  bwlogo: 'bwlogo-2.svg'}
 - {photo: 'client-3.jpg',
   name: 'Liu Kang',
   title: 'Marketing Director, Oniichan Corp.',
   quote: '<p><strong>Phasellus zmadea mollis nisi.</strong> Ut sodaldsases malesuada aliquet. Vestibulum faucibus sollicitudin turpis a sollicitudin.
   Vestibulum faucibus sollicitudin turpis a sollicitudin. Duis fermentum erat viverra, aliquet dolor quis, pulvinar arcu.</p>',
-  logo: 'logo-3.svg'}
+  logo: 'logo-3.svg',
+  bwlogo: 'bwlogo-3.svg'}
 
 # Contact Section
 # --------------
