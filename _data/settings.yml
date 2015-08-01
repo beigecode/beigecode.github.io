@@ -46,7 +46,7 @@ projects:
   - {name: LastCloudApp, folder: 'proj-1' }
   - {name: Assessment Module Authoring app, folder: 'proj-2' }
   - {name: Assessment Platform app , folder: 'proj-3' }
-  - {name: Moltin Store, folder: 'proj-4' }
+  - {name: Floatapp.com, folder: 'proj-4' }
 
 clients:
 - {photo: 'client-1.jpg',
