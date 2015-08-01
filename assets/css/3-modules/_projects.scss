@@ -43,7 +43,6 @@
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0px 20px white;
-	  @include perspective(300);
     background:{
       color: white;
       position: center center;
