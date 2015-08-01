@@ -29,12 +29,12 @@ skills:
   - {name: AngularJS, level: '7'}
   - {name: HTML5/CSS3, level: '8'}
   - {name: JavaScript/JQuery, level: '8'}
-  - {name: UX Design, level: '8'}
+  - {name: UI Design, level: '8'}
 
 services:
-  - {name: Web application development, icon: 'webapp'}
+  - {name: Web app development, icon: 'webapp'}
   - {name: Responsive website development, icon: 'responsive'}
-  - {name: Logo design, icon: 'logo'}
+  - {name: Web design, icon: 'logo'}
   - {name: Wordpress Development, icon: 'wordpress'}
 
 avatar: 'avatar.jpg'

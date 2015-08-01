@@ -48,7 +48,7 @@
       color: white;
       position: center center;
       repeat: no-repeat;
-      size: cover;
+      size: contain;
     }
     @media screen and (max-width: 760px) {
       width: 50%;
