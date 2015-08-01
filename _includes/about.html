@@ -4,7 +4,7 @@
 
   <div class="face-lockup">
 
-    <div class="face-img"></div>
+    <div class="face-img">{% include icons/avatar.html %}</div>
     {% for service in site.data.settings.services %}
     <div class="icon-{{service.icon}}">{% include icons/icon-{{service.icon}}.html %}<span>{{ service.name }}</span></div>
     {% endfor %}

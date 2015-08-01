@@ -22,9 +22,6 @@ section {
   .face-img {
     @include order(3);
     @include size(200px);
-    background-image: url(../img/#{$avatar-path});
-    background-position:center;
-    background-size: cover;
     border-radius: 100px;
   }
 
@@ -40,8 +37,8 @@ section {
 
     &.icon-webapp { @include order(1); }
     &.icon-responsive { @include order(2); }
-    &.icon-logo { @include order(4); margin-bottom: 25px;}
-    &.icon-wordpress { @include order(5); margin-bottom: 25px;}
+    &.icon-design { @include order(4); margin-bottom: 25px;}
+    &.icon-ecommerce { @include order(5); margin-bottom: 25px;}
   }
 }
 
