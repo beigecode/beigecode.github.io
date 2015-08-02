@@ -1,7 +1,7 @@
 # Portfolio settings
 # --------------
 title: anton_kann
-description: front-end development // web design // SEO
+description: front-end development // web design
 email: anton.kann@gmail.com
 logo: #ex: logo.jpg
 hero: #ex: hero.jpg
@@ -26,10 +26,13 @@ menu:
 blurb:  <p>Passionate and creative front-end developer and UI designer with a successful track record of building complex scalable web applications with polished UI experiences.</p>
 
 skills:
-  - {name: AngularJS, level: '7'}
-  - {name: HTML5/CSS3, level: '8'}
-  - {name: JavaScript/JQuery, level: '8'}
-  - {name: UI Design, level: '8'}
+  - {name: HTML5, skill: 'html'}
+  - {name: CSS3, skill: 'css'}
+  - {name: JavaScript, skill: 'javascript'}
+  - {name: JQuery, skill: 'jquery'}
+  - {name: AngularJS, skill: 'angular'}
+  - {name: BackboneJS, skill: 'backbone'}
+
 
 services:
   - {name: Web app development, icon: 'webapp'}
