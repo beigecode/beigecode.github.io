@@ -6,6 +6,7 @@ $(document).ready(function () {
     loadProjects();
     clientSlide();
     $("header h1 .glitch").fitText(0.8, { minFontSize: '38px', maxFontSize: '72px' });
+    new WOW().init();
 });
 
 function smoothScroll(duration) {

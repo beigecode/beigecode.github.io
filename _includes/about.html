@@ -1,24 +1,24 @@
 <section id="about-me">
 
-  <h2 class="section-heading">About Me</h2>
+  <h2 class="section-heading wow slideInLeft" data-wow-duration="2s">About Me</h2>
+  <div class="wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
+    <div class="face-lockup">
 
-  <div class="face-lockup">
+      <div class="face-img">{% include icons/avatar.html %}</div>
+      {% for service in site.data.settings.services %}
+      <div class="icon-{{service.icon}}">{% include icons/icon-{{service.icon}}.html %}<span>{{ service.name }}</span></div>
+      {% endfor %}
+    </div>
 
-    <div class="face-img">{% include icons/avatar.html %}</div>
-    {% for service in site.data.settings.services %}
-    <div class="icon-{{service.icon}}">{% include icons/icon-{{service.icon}}.html %}<span>{{ service.name }}</span></div>
-    {% endfor %}
+    <div class="blurb">
+      <p>{{ site.data.settings.blurb | markdownify }}</p>
+    </div>
+
+    <div class="skill-lockup">
+
+      {% for skill in site.data.settings.skills %}
+      <div class="skill-{{skill.skill}}">{% include icons/skill-{{skill.skill}}.html %}</div>
+      {% endfor %}
+    </div>
   </div>
-
-  <div class="blurb">
-    <p>{{ site.data.settings.blurb | markdownify }}</p>
-  </div>
-
-  <div class="skill-lockup">
-
-    {% for skill in site.data.settings.skills %}
-    <div class="skill-{{skill.skill}}">{% include icons/skill-{{skill.skill}}.html %}</div>
-    {% endfor %}
-  </div>
-
 </section>
